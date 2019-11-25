@@ -14,14 +14,14 @@
 <div id="app">
 
     <ul>
-      <li v-for="task in tasks">{{ task}}
+      <li v-for="todo in todos">{{ task}}
       </li>
     </ul>
 
-  <form v-on:submit.prevent="saveNewTask">
-  <label for="new-task">Add a new task to complete!:</label>
-  <input id="new-task" type="text" v-model="newTask" />
-  <input type="submit" value ="Save New Task" />
+  <form v-on:submit.prevent="saveNewTodo">
+  <label for="new-todo">Add a new task to complete!:</label>
+  <input id="new-todo" type="text" v-model="newTodo" />
+  <input type="submit" value ="Save New Todo" />
   </form>
 
 
